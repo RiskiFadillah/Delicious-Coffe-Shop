@@ -1,0 +1,26 @@
+.history-cust {
+  background: url(../css/img/history-cust.png) no-repeat;
+  background-size: cover;
+  height: 160vh;
+  display: flex;
+}
+
+.history-container {
+  width: 200vw;
+  padding: 1vw auto;
+}
+
+.history-cust-card {
+  margin: 0.5vw 0.5vw;
+  width: 25vw;
+  padding: 1vw;
+  background: #fff;
+  color: black;
+  text-align: center;
+  align-items: center;
+}
+
+.history-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}

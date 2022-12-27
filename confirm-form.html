@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm users</title>
+    <style>
+
+      .card-feeds{
+        background-color: #fff;
+        box-shadow: 0px 0px 50px #000000aa;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .row-item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Lets Check Data is correct ?</h1>
+      <div id="feeds" class="row-item"></div>
+      
+  </body>
+  <script>
+    let getUsers = () => {
+      return new Promise((resolve, reject) => {
+        fetch("https://63a00dca24d74f9fe82ce566.mockapi.io/Users",{
+          method :"GET",
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              return reject({
+                message: "Failed to get data",
+                data: [],
+              });
+            }
+          })
+          .then((data) => {
+            let dataFeeds = data;
+            document.getElementById("feeds").innerHTML = data.map((item) => 
+              `<div class = "card-feeds">
+              <div>${item.custName}</div>
+              <div>${item.custemail}</div>
+              <div>${item.custaddress}</div>
+              <img src='${item.avatar}'>
+              <button onclick = 'deleteData(${item.id})'>Delete</button>
+              </div>
+              `
+            );
+          });
+      }).catch(() =>
+        reject({
+          message: "Fail to fetch",
+          data: [],
+        })
+      );
+    };
+
+    getUsers()
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+      const deleteData = (id) =>{
+        fetch(`https://63a00dca24d74f9fe82ce566.mockapi.io/Users/${id}`,{
+          method: 'delete',
+        })
+        .then(res => {
+          if(!res.ok) return Promise.reject(new Error(`HTTP Error ${res.status}`))
+
+          return res.json();
+        })
+        .then(data => {
+          alert("data berhasil dihapus")
+        })
+        .catch(err => console.error(err))
+      }
+  </script>
+</html>

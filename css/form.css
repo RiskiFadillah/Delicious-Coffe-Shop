@@ -1,0 +1,58 @@
+.form-bg {
+  background: url(../css/img/coffe-bean.png) no-repeat;
+  background-size: cover;
+  height: 180vh;
+  display: flex;
+}
+
+.container-form {
+  margin: 13vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-cust {
+  width: 70vw;
+  height: 150vh;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 80px;
+}
+.form-pic {
+  margin-top: 2vw;
+  width: 40%;
+  text-align: center;
+}
+
+.formulir {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 35vw;
+  height: 100vh;
+  box-shadow: 0px 0px 20px #000000aa;
+}
+
+.formulir input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%S;
+}
+
+.formulir input:focus {
+  outline: none;
+}
+
+.formulir-cust {
+  margin-top: 2vw;
+  width: 60%;
+}
+
+.img-profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}

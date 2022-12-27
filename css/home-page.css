@@ -1,0 +1,252 @@
+.navbar-container {
+  width: 100%;
+}
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  /* background: #2fab73; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 200px;
+}
+
+.menu-nav ul li a {
+  display: block;
+  color: #6a4029;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+  margin-top: 13px;
+  text-decoration: none;
+}
+
+.menu-nav ul li a:hover {
+  color: #dddddd;
+}
+
+.container-jumbotron-text {
+  /* position: relative; */
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  padding-top: 2%;
+  gap: 3vh;
+}
+.jumbotron-img {
+  background-image: url(img/nathan-dumlao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.container-rectangle {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  width: max(50vw, 60vw);
+  height: 10vw;
+  z-index: 9;
+  border: none;
+  margin-top: -10vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container-quality {
+  display: flex;
+  align-items: center;
+  margin-top: 20vh;
+  gap: 5vw;
+}
+
+.container-fave {
+  width: 100%;
+  margin-top: 15vh;
+}
+.col-3 {
+  border: 2px solid #dddddd;
+  gap: 5vw;
+}
+
+.col-sm-4 {
+  border: 2px solid #dddddd;
+  gap: 5vw;
+}
+
+.container-fave {
+  margin-bottom: 15vh;
+}
+
+.card-container img {
+  position: relative;
+  margin-top: -70px;
+}
+
+.card-container ul {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.card-container i {
+  padding-right: 10px;
+  color: #2fab73;
+}
+
+/* Card */
+.cust-image {
+  display: flex;
+  padding: 20px;
+  gap: 5px;
+}
+
+.cust-name {
+  font-size: 16px;
+  padding: 15px 16px;
+  text-align: start;
+}
+
+.star {
+  position: relative;
+  top: -10px;
+  left: 30px;
+}
+
+.cust-image img {
+  width: 95px;
+  height: 95px;
+}
+
+.review-card {
+  width: 32vw;
+  height: 39vh;
+  border: 2px solid black;
+}
+
+.cust-review {
+  padding-top: 10px;
+}
+
+.button-carousel {
+  padding-top: 50px;
+  display: flex;
+  flex: 1;
+}
+
+.circle {
+  width: 45px;
+  height: 15px;
+  background: #6a4029;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 80vh;
+}
+
+.button-carousel i {
+  padding: 5px;
+  color: #dde0e4;
+}
+
+.arrow {
+  display: flex;
+  gap: 15px;
+  padding-top: 3.5vw;
+  padding-right: 10vw;
+  justify-content: end;
+}
+
+.right {
+  background-color: #6a4029;
+  color: #fff;
+}
+
+.left {
+  border: 2px solid #6a4029;
+  color: #6a4029;
+  background-color: #fff;
+}
+
+.container-rectangle-footer {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: max(40vw, 60vw);
+  height: 35vh;
+  z-index: 9;
+  border: none;
+  margin-top: -20vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 2px;
+    background: #6a4029;
+    margin: 6px;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #6a4029;
+    transition: 0.2s;
+    width: fit-content;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+    border-radius: 10px;
+  }
+
+  .navbar.active {
+    height: 350px;
+    opacity: 1;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-rectangle {
+    z-index: -1;
+  }
+
+  .navbar ul li a {
+    margin-right: 50px;
+    color: #dddddd;
+  }
+}

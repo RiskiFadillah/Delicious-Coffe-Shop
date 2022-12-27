@@ -1,0 +1,35 @@
+.auth-bg {
+  background: url(../css/img/login/nani-williams.png) no-repeat;
+  background-size: cover;
+  height: 148vh;
+  display: flex;
+  flex: 0.5;
+}
+
+.auth-form {
+  height: 100%;
+  flex-direction: column;
+  flex: 0.5;
+}
+
+.navbar {
+  height: 40px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.text-account {
+  position: relative;
+  text-align: center;
+  top: -20px;
+  background: white;
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 780px){
+  .container{
+   overflow: hidden;
+   margin: 0 auto;
+  }
+}

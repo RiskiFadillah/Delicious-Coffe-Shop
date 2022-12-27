@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <main class="container-form">
+      <section class="auth-bg"></section>
+      <section class="auth-form">
+        <nav class="container navbar m-5">
+          <div class="brand">
+            <a href="home-page.html" style="text-decoration:none"
+                ><img src="./css/img/coffee 3.svg" alt="Logo-coffe" width="30" height="30">
+                <span class="secondary-color">Delicious Coffee</span>
+              </a>
+          </div>
+          <button class="btn btn-primary rounded-full ">Sign Up</button>
+        </nav>
+        <div>
+          <h3 class="text-center text-secondary">Login</h3>
+          <form class="p-50">
+            <div class="mb-5">
+              <label class="form-label" for="email-input">Email Address</label>
+              <input
+                class="form-input rounded-xl"
+                id="email-input"
+                type="email"
+                placeholder="Example: johndoe@gmail.com"
+              />
+            </div>
+            <div class="mb-5">
+              <label class="form-label" for="password-input">Password</label>
+              <input
+                class="form-input rounded-xl"
+                id="password-input"
+                type="password"
+                placeholder="Example: ****"
+              />
+            </div>
+            <button class="btn btn-primary rounded-full btn-block mb-5">
+              Login
+            </button>
+            <button
+              class="btn btn-primary rounded-full btn-block mb-5 btn-third"
+            >
+              <i class="fa-brands fa-google"></i> Sign Up With Google
+            </button>
+            <div>
+              <hr width="100%" color="#C4C4C4" />
+              <div class="text-account">Don’t have an account?</div>
+            </div>
+            <button class="btn btn-secondary rounded-full btn-block">
+              <a href="signup.html" class="white-color anchor">
+              Sign up here</a>
+            </button>
+          </form>
+        </div>
+        <!-- Footer -->
+        <footer class="gray-bg login">
+          <div class="container login-footer">
+            <a href="home-page.html" style="text-decoration:none"
+                ><img src="./css/img/coffee 3.svg" alt="Logo-coffe" width="30" height="30">
+                <span class="secondary-color">Delicious Coffee</span>
+              </a>
+            <p class="text-font-p">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
+          <div class="social-media">
+          <button class="button-sm border-radius-md btn-primary no-border"><a href="#"><i class="fa-brands fa-facebook secondary-color"></i></a></button>
+          <button class="button-sm border-radius-md btn-primary no-border"><a href="#"><i class="fa-brands fa-twitter secondary-color"></i></a></button>
+          <button class="button-sm border-radius-md btn-primary no-border"><a href="#"><i class="fa-brands fa-instagram secondary-color"></i></i></a></button>
+          <p class="pt-3 primary-color">@2020CoffeShop</p>
+        </div>
+        </div>
+          <div class="secondary-color login-info-footer">
+            <ul class="none-list-typle line-height-s">
+              <a href="product-cust.html" class="anchor secondary-color"><li><h4>Product</h4></li></a>
+              <li>Download</li>
+              <li>Pricing</li>
+              <li>Locations</li>
+              <li>Countries</li>
+              <li>Blog</li>
+            </ul>
+            <ul class="none-list-typle line-height-s">
+              <li><h4>Engage</h4></li>
+              <li>FAQ</li>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Ters Of Service</li>
+            </ul>
+          </div>
+        </footer>
+    </section>
+    </main>
+  </body>
+</html>
